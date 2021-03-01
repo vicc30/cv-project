@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# PROJECT: CV APPLICATION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is my solution for the project that is part of [Odin Project JS Curriculum](https://www.theodinproject.com/courses/javascript/). 
 
-## Available Scripts
+## Thank you OP Community
 
-In the project directory, you can run:
+Special thanks to @Alex73, @Kevin and all great people in the community that help us to become better and always got time to help others. 
 
-### `yarn start`
+## Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[x] Create a new project using npx create-react-app cv-project. 
+    - This project is using `yarn`. Command  `yarn start` to start the local server on port `localhost:3000`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[x] Remove the boilerplate code created by create-react-app.
 
-### `yarn test`
+[x] Think about how to structure your application into components. Your application should include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    [x] A section to add general information like name, email, phone number. 
 
-### `yarn build`
+    - General section is conditional rendered in `./src/components/General.js` with conditional rendering for edit and save view.
+  
+    - Data for general section saves in local state values of first name, last name, phone, email.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    [ ] A section to add your educational experience (school name, title of study, date of study)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    [ ] A section to add practical experience (company name, position title, main tasks of your jobs, date from and until when you worked for that company)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    [ ] Be sure to include an edit and submit button for each section or for the whole CV, your preference. 
 
-### `yarn eject`
+    [ ] The submit button should submit your form and display the value of your input fields in HTML elements. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    [ ] The edit button should add back (display) the input fields, with the previously displayed information as values. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    [ ] In those input fields, you should be able to edit and resubmit the content. You’re going to make heavy use of state and props, so make sure you understood those concepts.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[x] Create a components folder in your src directory and add your components.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[x] Include a styles folder in your src directory for your CSS files. You’ll need to import these in the component files to use them.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[ ] Don’t forget to push your solution to GitHub. You should be proud of your work and show it off to the world!
