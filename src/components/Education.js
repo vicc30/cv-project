@@ -1,30 +1,28 @@
 import React from 'react';
 
-const SavedGeneral = (props) => {
-    const { fname, lname, email, phone, handleClick } = props;
-
+const SavedEducation = (props) => {
+    const { school, title, start, end, handleClick } = props;
     return (
         <div>
-            <h2>General Section</h2>
-            <p>Name: {fname} {lname}</p>
-            <p>email: {email}</p>
-            <p>phone: {phone}</p>
-            <button onClick={handleClick}>
-                Edit
-			</button>
+            <h2>Education Section</h2>
+            <p>School name: {school}</p>
+            <p>title: {title}</p>
+            <p>Start Date: {start}</p>
+            <p>End Date: {end}</p>
+            <button onClick={handleClick}> Edit </button>
         </div>
     );
 }
 
-class General extends React.Component {
-
+class Education extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
-            fname: "",
-            lname: "",
-            email: "",
-            phone: "",
+            schoolName: "",
+            title: "",
+            startDate: "",
+            endDate: "",
             edit: true
         }
 
@@ -45,68 +43,65 @@ class General extends React.Component {
     }
 
     render() {
-        const { fname, lname, email, phone, edit } = this.state;
+        const { schoolName, title, startDate, endDate, edit } = this.state;
 
         if (!edit) {
             return (
-                <SavedGeneral 
-                    fname={fname} 
-                    lname={lname} 
-                    email={email} 
-                    phone={phone} 
-                    edit={edit} 
-                    handleClick={this.handleClick} 
+                <SavedEducation
+                    school={schoolName}
+                    title={title}
+                    start={startDate}
+                    end={endDate}
+                    handleClick={this.handleClick}
                 />
             );
         }
 
         return (
-            <div className="container">
-                <h2>General Section</h2>
+            <div>
+                <h2>Education</h2>
                 <form>
                     <div className="row">
                         <div className="col">
-                            <label>First name:</label>
+                            <label>School Name: </label>
                             <input
                                 type='text'
-                                placeholder='Place Your First Name'
-                                name='fname'
+                                placeholder='Place Your School Name'
+                                name='schoolName'
                                 onChange={this.handleChange}
-                                value={fname}
-                            />
-                        </div>
-                        <div className="col">
-                            <label>Last name:</label>
-                            <input
-                                type='text'
-                                placeholder='Place Your Last Name'
-                                name='lname'
-                                onChange={this.handleChange}
-                                value={lname}
+                                value={schoolName}
                             />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                            <label>E-mail</label>
+                            <label>Title: </label>
                             <input
-                                type='mail'
-                                placeholder='Your Email'
-                                name='email'
+                                type='text'
+                                placeholder='Place your Title'
+                                name='title'
                                 onChange={this.handleChange}
-                                value={email}
+                                value={title}
                             />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
-                            <label>Phone number</label>
+                            <label>Start date: </label>
                             <input
-                                type='text'
-                                placeholder='Phone number'
-                                name='phone'
+                                type='date'
+                                name='startDate'
                                 onChange={this.handleChange}
-                                value={phone}
+                                value={startDate}
+                            />
+                        </div>
+                        <div className="col">
+                            <label>End date: </label>
+                            <input
+                                type='date'
+                                name='endDate'
+                                onChange={this.handleChange}
+                                value={endDate}
                             />
                         </div>
                     </div>
@@ -117,4 +112,4 @@ class General extends React.Component {
     }
 }
 
-export default General;
+export default Education;

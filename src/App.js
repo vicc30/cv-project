@@ -1,5 +1,7 @@
 import React from 'react';
 import General from './components/General';
+import Education from './components/Education';
+import Experience from './components/Experience';
 
 class App extends React.Component {
   render() {
@@ -10,6 +12,8 @@ class App extends React.Component {
         </header>
         <main className="container app">
           <General />
+          <Education />
+          <Experience />
         </main>
       </div>
     );
