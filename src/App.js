@@ -14,6 +14,16 @@ class App extends React.Component {
     }
 
     this.handleNew = this.handleNew.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
+  }
+
+  handleDelete(type, id) {
+    this.setState((prevState) => {
+      let newList = prevState[type].filter((key) => key !== id);
+      return {
+        [type]: newList,
+      };
+    });
   }
 
   handleNew(type) {
@@ -29,11 +39,11 @@ class App extends React.Component {
     const { education, experience } = this.state;
 
     const educationList = education.map((id) => {
-      return <Education key={id} id={id} />
+      return <Education key={id} id={id} handleDelete={this.handleDelete} />
     });
 
     const experienceList = experience.map((id) => {
-      return <Experience key={id} id={id} />
+      return <Experience key={id} id={id} handleDelete={this.handleDelete} />
     });
 
     return (

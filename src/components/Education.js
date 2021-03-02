@@ -43,6 +43,7 @@ class Education extends React.Component {
 
     render() {
         const { schoolName, title, startDate, endDate, edit } = this.state;
+        const { handleDelete, id } = this.props;
 
         if (!edit) {
             return (
@@ -104,6 +105,7 @@ class Education extends React.Component {
                         </div>
                     </div>
                     <button type="submit" onClick={this.handleClick}>Save</button>
+                    <button type="button" onClick={() => handleDelete('education', id)}>Delete</button>
                 </form>
             </div>
         );

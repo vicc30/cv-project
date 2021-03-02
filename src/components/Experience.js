@@ -44,6 +44,7 @@ class Experience extends React.Component {
 
     render() {
         const { company, position, mainTasks, startDate, endDate, edit } = this.state;
+        const { handleDelete, id } = this.props;
 
         if (!edit) {
             return (
@@ -118,6 +119,7 @@ class Experience extends React.Component {
                         </div>
                     </div>
                     <button type="submit" onClick={this.handleClick}>Save</button>
+                    <button type="button" onClick={() => handleDelete('experience', id)}>Delete</button>
                 </form>
             </div>
         );
