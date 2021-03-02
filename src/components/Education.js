@@ -4,7 +4,6 @@ const SavedEducation = (props) => {
     const { school, title, start, end, handleClick } = props;
     return (
         <div>
-            <h2>Education Section</h2>
             <p>School name: {school}</p>
             <p>title: {title}</p>
             <p>Start Date: {start}</p>
@@ -59,7 +58,6 @@ class Education extends React.Component {
 
         return (
             <div>
-                <h2>Education</h2>
                 <form>
                     <div className="row">
                         <div className="col">

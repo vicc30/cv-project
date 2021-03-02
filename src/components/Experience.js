@@ -4,7 +4,6 @@ const SavedExperience = (props) => {
     const { company, position, start, end, handleClick } = props;
     return (
         <div>
-            <h2>Experience</h2>
             <p>Company name: {company}</p>
             <p>Position: {position}</p>
             <p>Start Date: {start}</p>
@@ -61,7 +60,6 @@ class Experience extends React.Component {
 
         return (
             <div>
-                <h2>Experience</h2>
                 <form>
                     <div className="row">
                         <div className="col">
