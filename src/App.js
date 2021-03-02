@@ -52,13 +52,19 @@ class App extends React.Component {
           <h1>CV App with React</h1>
         </header>
         <main className="container app">
-          <General />
-          <h2>Education Section</h2>
-          {educationList}
-          <button onClick={() => this.handleNew('education')}>New Education Section</button>
-          <h2>Experience Section</h2>
-          <button onClick={() => this.handleNew('experience')}>New Experience Section</button>
-          {experienceList}
+          <div className="section">
+            <General />
+          </div>
+          <div className="section">
+            <h2>Education Section</h2>
+            {educationList}
+            <button onClick={() => this.handleNew('education')}>New</button>
+          </div>
+          <div className="section">
+            <h2>Experience Section</h2>
+            {experienceList}
+            <button onClick={() => this.handleNew('experience')}>New</button>
+          </div>
         </main>
       </div>
     );

@@ -1,3 +1,79 @@
-body {
+*::after *::before {
   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  align-items: center;
+}
+
+.App {
+  background-color: rgb(17, 103, 124);
+  width: 60vw;
+  height: auto;
+  text-align: center;
+  border: solid 2px rgb(17, 103, 124);
+  border-radius: 0.5rem;
+  margin: auto;
+}
+
+.App h1,
+.App h2,
+.App p,
+.App label {
+  color: rgb(255, 255, 255);
+}
+
+.App input {
+  font-size: 1rem;
+}
+
+.App label,
+.App p,
+button {
+  font-size: 1.3rem;
+}
+
+.App button {
+  background-color: rgb(104, 104, 104);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.App button:hover {
+  cursor: pointer;
+}
+
+form div {
+  margin: 0.5rem 0;
+}
+
+.section {
+  border-bottom: solid white 1px;
+  padding: 2rem 0;
+}
+
+button {
+  margin: 0.3rem;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .App {
+    width: 100%;
+  }
+  .App label,
+  .App p,
+  button {
+    font-size: 1rem;
+  }
+  .App input {
+    font-size: 0.8rem;
+  }
+  .section {
+    padding: 1rem 0;
+  }
 }

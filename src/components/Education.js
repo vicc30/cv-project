@@ -5,7 +5,7 @@ const SavedEducation = (props) => {
     return (
         <div>
             <p>School name: {school}</p>
-            <p>title: {title}</p>
+            <p>Title: {title}</p>
             <p>Start Date: {start}</p>
             <p>End Date: {end}</p>
             <button onClick={handleClick}> Edit </button>

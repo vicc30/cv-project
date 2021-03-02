@@ -7,8 +7,8 @@ const SavedGeneral = (props) => {
         <div>
             <h2>General Section</h2>
             <p>Name: {fname} {lname}</p>
-            <p>email: {email}</p>
-            <p>phone: {phone}</p>
+            <p>E-mail: {email}</p>
+            <p>Phone number: {phone}</p>
             <button onClick={handleClick}>
                 Edit
 			</button>
@@ -66,7 +66,7 @@ class General extends React.Component {
                 <form>
                     <div className="row">
                         <div className="col">
-                            <label>First name:</label>
+                            <label>First name: </label>
                             <input
                                 type='text'
                                 placeholder='Place Your First Name'
@@ -76,7 +76,7 @@ class General extends React.Component {
                             />
                         </div>
                         <div className="col">
-                            <label>Last name:</label>
+                            <label>Last name: </label>
                             <input
                                 type='text'
                                 placeholder='Place Your Last Name'
@@ -88,7 +88,7 @@ class General extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col">
-                            <label>E-mail</label>
+                            <label>E-mail: </label>
                             <input
                                 type='mail'
                                 placeholder='Your Email'
@@ -100,7 +100,7 @@ class General extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col">
-                            <label>Phone number</label>
+                            <label>Phone number: </label>
                             <input
                                 type='text'
                                 placeholder='Phone number'
