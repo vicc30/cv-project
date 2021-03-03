@@ -38,3 +38,5 @@ Special thanks to @Alex73, @Kevin and all great people in the community that hel
 [x] Include a styles folder in your src directory for your CSS files. You’ll need to import these in the component files to use them.
 
 [x] Don’t forget to push your solution to GitHub. [Live preview](https://cv-gnrt.herokuapp.com/)
+
+[x] UPDATE:  Rewrite App using functional components and hooks.
